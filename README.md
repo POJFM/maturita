@@ -1,4 +1,4 @@
-### Materiály k maturitě
+# Materiály k maturitě
 
 - [GitHub - Mastering markdown](https://guides.github.com/features/mastering-markdown/)
 - [Maturitní četba](https://github.com/SPSOAFM-IT18/cetba)
