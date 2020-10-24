@@ -4,7 +4,7 @@
 **Předmět:** OBDORNÉ PŘEDMĚTY 1
 
 1. [Základy algoritmizace a programování](https://github.com/SPSOAFM-IT18/maturita/blob/main/ICT/01-zaklady-algoritmizace-a-programovani.md)
-2. Strukturované programování – sekvence – příkazy pro vstup a výstup (C#, Java)
+2. [Strukturované programování – sekvence – příkazy pro vstup a výstup (C#, Java)](https://github.com/SPSOAFM-IT18/maturita/blob/main/ICT/02-strukturovane-programovani-sekvence.md)
 3. Strukturované programování - větvení
 4. Strukturované programování - cykly
 5. Pole
