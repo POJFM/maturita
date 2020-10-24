@@ -3,7 +3,7 @@
 **Obor vzdělání:** 18-20-M/01 Informační technologie
 **Předmět:** OBDORNÉ PŘEDMĚTY 1
 
-1. Základy algoritmizace a programování
+1. [Základy algoritmizace a programování](https://github.com/SPSOAFM-IT18/maturita/blob/main/ICT/01-zaklady-algoritmizace-a-programovani.md)
 2. Strukturované programování – sekvence – příkazy pro vstup a výstup (C#, Java)
 3. Strukturované programování - větvení
 4. Strukturované programování - cykly
