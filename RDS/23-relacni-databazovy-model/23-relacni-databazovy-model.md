@@ -70,11 +70,11 @@ V jednotlivých databázových systémech mohou být použity odlišné názvy p
 
 ![celočíselné datové typy](/RDS/23-relacni-databazovy-model/ciselne_typy.PNG)
 
-![reálné datové typy](/RDS/23-relacni-databazovy-model/realne_typy.png)
+![reálné datové typy](/RDS/23-relacni-databazovy-model/realne_typy.PNG)
 
 M – celková délka čísla, D – délka čísla za des. čárkou DOUBLE a DECIMAL – používají se pro uložení nepřesných des. čísel. S nepřesnými des. čísly bývají problémy, proto raději používat typ Float (M, D)
 
-![řetězce](/RDS/23-relacni-databazovy-model/retezce.png)
+![řetězce](/RDS/23-relacni-databazovy-model/retezce.PNG)
 
 **VÝČTOVÉ DATOVÉ TYPY**
 
@@ -87,4 +87,4 @@ SET (´prvek 1&#39;, &#39;prvek2&#39;,…) – pole předem definovaných prvků
 
 Klíčová slova, která upravují chování jednotlivých polí tabulky:
 
-![modifikatory datovych poli](/RDS/23-relacni-databazovy-model/modifikatory.png)
+![modifikatory datovych poli](/RDS/23-relacni-databazovy-model/modifikatory.PNG)
