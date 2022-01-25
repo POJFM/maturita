@@ -16,7 +16,7 @@
 
 ### Vstupy / načtení
 
-- `Console.ReadLine()` - přečtě řádek a vrací string, pro jiný datový typ musíme string přetypovat, např.:  `int num = int.Parse(Console.ReadLine())`
+- `Console.ReadLine()` - přečtě řádek a vrací string, pro jiný datový typ musíme string přetypovat, např.: `int num = int.Parse(Console.ReadLine())`
 - `Console.ReadKey()` - čeká až se zmáčkne klávesa
 
 ### Různé formáty výpisu
@@ -42,7 +42,7 @@ Console.WriteLine($"Měna: {n}:C")
 ```
 
 | Formát             | Specifikace |
-|--------------------|-------------|
+| ------------------ | ----------- |
 | Měna               | C, Cn       |
 | Desítková soustava | D, Dn       |
 | Exponenciální      | E, En       |
@@ -68,8 +68,8 @@ Console.WriteLine($"Měna: {n}:C")
 
 **Úplné větvení**
 
-- Má kroky pro kladnou i zápornou odpověď
-- 
+Má kroky pro kladnou i zápornou odpověď
+
 ```csharp
 if (podminka) {
     // do stuff if (podminka == true)
@@ -83,20 +83,22 @@ else {
 
 **Neúplné větvení**
 
-- Chybí krok pro kladnou nebo zápornou odpověd
-  
+Chybí krok pro kladnou nebo zápornou odpověd
+
 ```csharp
 if (podminka) {
     // do stuff if (podminka == true)
 }
 ```
 
-// img
+<p align="center">
+  <img src="img/02-02.svg" />
+</p>
 
 **Vnořené větvení**
 
-- Má kroky pro kladnou i zápornou odpověď a ty jsou následně tvořeny dalším větvením
-  
+Má kroky pro kladnou i zápornou odpověď a ty jsou následně tvořeny dalším větvením
+
 ```csharp
 if (podminka) {
     // do stuff if (podminka == true)
@@ -107,14 +109,23 @@ else {
 }
 ```
 
-### Povolená operace
-- součet (+)
-- rozdíl (-)
-- součin (*)
-- mocnina SQR (^)
-- logický součet (OR)
-- logický součin (AND)
-- negace (NOT)
+**Vícenásobné větvení**
 
-### Nepovolené operace
-- podíl (/) - nějaký
+Podle toho čemu se se rovná porovnávaná proměnná se provede kód
+
+```csharp
+switch(n) {
+	case 23:
+		// n == 23
+		break;
+	case 3:
+		// n == 3
+		break;
+	case 420:
+		// n == 420
+		break;
+	case default:
+		// pokud se n nerovná žádné ze zadaných hodnot
+		break;
+}
+```
