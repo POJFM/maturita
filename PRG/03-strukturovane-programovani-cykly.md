@@ -16,7 +16,7 @@ for (int i = 0; i < 10; i++) {
 ```
 
 - v inicializaci nastavujeme nejčastěji hodnotu 0 (int i =0)
-- podmínka musí být splněna pro vykonání dalšího kroku cyklu, když přestane platit cyklus se ukončí
+- podmínka musí být splněna pro vykonání dalšího kroku cyklu, když přestane platit, cyklus se ukončí
 - aktualizace znamená co s danou proměnou má stát například zvýší se vždy o 1 (i++)
 - nejčastěji se využívá u polí
 
