@@ -5,12 +5,12 @@
 - Princip je rozdělení složitých úloh na dílčí jednodušší úlohy, které se řeší samostatně
 - Úkoly se následně spojí v jeden celek
 - Patří zde: Sekvence, cykly, větvení, přepínače
-- Příkazy se v metodě Main, vykonávají v počadí jakém jsou zadané
+- Příkazy se v metodě Main, vykonávají v pořadí jakém jsou zadané
 
 ## Sekvence
 
 - Nejjednodušší typ algoritmu
-- Skládá se pouze z mezních značek, značka pro vstup avýstup dat a značek pro zpracování (přiřazení) dat
+- Skládá se pouze z mezních značek, značka pro vstup a výstup dat a značek pro zpracování (přiřazení) dat
 - Povolené operace: součet, rozdíl, součin, mocnina, OR, AND, negace
 - Nepovolené operace: podíl, celočíselné dělení, odmocnina, cykly
 
