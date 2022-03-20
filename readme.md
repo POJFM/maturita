@@ -1,9 +1,11 @@
 # Materiály k maturitní zkoušce
+
 **Obor vzdělání:** 18-20-M/01 Informační technologie
 
-
 ### Témata k ústní maturitní zkoušce platné k roku 2021/22 (Profilová část)
+
 #### Odborný předmět 1
+
 - [PRG](https://github.com/SPSOAFM-IT18/maturita/tree/main/PRG) (1-17)
 - [WEB](https://github.com/SPSOAFM-IT18/maturita/tree/main/WEB) (18-22)
 - [RDS](https://github.com/SPSOAFM-IT18/maturita/tree/main/RDS) (23-30)
@@ -40,6 +42,7 @@
 30. [Entitně-relační modelování](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/30-entitne-relacni-modelovani.md)
 
 #### Odborný předmět 2
+
 - [ZAM](https://github.com/SPSOAFM-IT18/maturita/tree/main/ZAM) (1-13)
 - [OSW](https://github.com/SPSOAFM-IT18/maturita/tree/main/OSW) (14-19)
 - [OSL](https://github.com/SPSOAFM-IT18/maturita/tree/main/OSL) (20-25)
@@ -78,8 +81,24 @@ $ pandoc 00-vzor.md -o vzor.pdf
 ```
 
 #### Windows users
+
+- `go succ sum BBC`
 - [install pandoc directly from `.zip` file](https://github.com/jgm/pandoc/releases/tag/2.16)
 - [convert md with online converter](https://cloudconvert.com/md-to-docx)
+
 ## Jak přispět?
+
+### Pravidla:
+
+- žádné `.pdf`, `.docx` a podobné binární formáty, pouze superior ✨`.md`✨
+
+### Jak přispět úpravy a vylepšení
+
+- oblíbený textový editor (masochisté si stáhnou PSpad, Notepad++ a podobně 🤢)
+- stáhnout `git` (use google.com)
+- oblíbený editor by měl mít itegraci git, jinak není ten správný
+- [Jak funguje GitHub?](https://github.com/firstcontributions/first-contributions)
+
+### Markdown
+
 - [GitHub - Mastering markdown](https://guides.github.com/features/mastering-markdown/)
-- [GitHub - First contributors](https://github.com/firstcontributions/first-contributions)
