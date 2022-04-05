@@ -29,11 +29,11 @@ Spojovacími prvky mezi přenosovou a distribuční soustavou jsou **elektrické
 ### Úrovně napětí:
 
 - Ultra vysoké napětí uvn - více než 800 kV
-- zvlášť vysoké napětí ZVN – 300kV/800kV dálkové a mezinárodní přenosy
-- velmi vysoké napětí VVN – 52kV/300kV energie do továren
-- vysoké napětí VN – 1000V/52kV energie do transformátorů
-- nízké napětí nn - místní rozvody 50/1000 V
-- malé napětí mn - 0/50V
+- zvlášť vysoké napětí ZVN – 300kV-800kV dálkové a mezinárodní přenosy
+- velmi vysoké napětí VVN – 52kV-300kV energie do továren
+- vysoké napětí VN – 1000V-52kV energie do transformátorů
+- nízké napětí nn - místní rozvody 50-1000 V
+- malé napětí mn - 0-50V
 
 ## b) ztráty při přenosu energie
 
