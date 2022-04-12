@@ -1,4 +1,4 @@
-# Řízení s uzavřenou smyškou - regulace
+# Řízení s uzavřenou smyčkou - regulace
 
 - **regulace** - umožňuje udržování určitých fyzikálních veličin na stanovených hodnotách, řízení na zpětnou vazbu
 
