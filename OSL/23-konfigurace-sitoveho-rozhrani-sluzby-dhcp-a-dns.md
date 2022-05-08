@@ -28,7 +28,7 @@ post-up echo “nameserver 192.168.1.1” >> /etc/resolv.conf # potom co nastart
   - Kde se mají hledat základní informace (uživatelé, skupiny, hosti, sítě, ...)
 - `/etc/networks`
   - Pojmenování sítí
-  - Jméno ip_adresa_sítě
+  - `name net-ip`
 
 ### Základní příkazy pro konfiguraci rozhrání, diagnostika
 
