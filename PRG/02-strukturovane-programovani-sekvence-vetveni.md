@@ -54,12 +54,13 @@ Console.WriteLine($"Měna: {n}:C")
 
 ## Větvení
 
-- Větvení je alternativa rozhodování
+- jde o řídicí strukturu, konkrétněji o část zdrojového kódu, která umožňuje rozdělit tok programu a vykonávat tak různé instrukce v různých případech
 - Využívá se pokud mají některé kroky být vynechané, nahrazené, přidané
 - Ptáme se na otázky:
   - Co se stane, když platí podmínka
   - Co se stane, když podmínka neplatí
 - První část je povinná, druhá nepovinná, (když platí provede se, neplatí nic se nestane)
+- podmínka je logický výraz
 - Podmínky obsahují relační operátory(==, !=, <,>…)
 - Součástí mohou být i logické operátory AND(&&) OR(||)
 - Pokud je příkaz 1 nebo 2 složený z více příkazů musí obsahovat { }
