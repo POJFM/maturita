@@ -49,6 +49,7 @@
 - Jsou to operace, které lze vytvořit i pomocí základních operací
 
 ### Průnik
+
 - Binární operace, která se uplatňuje na relace stejného stupně.
 - Atributy jsou definovány nad stejnými doménami.
 - Bez duplicitních řádků
@@ -61,33 +62,40 @@ SELECT FROM Tabl INNER JOIN Tab2 ON a-c AND b=d;
 ```
 
 ### Kartézský součin
+
 - Binární operace, stupeň výsledné relace je `M+N` (kardinalita `M*N`)
 
 `SELECT * FROM Tab1,Tab2;`
 
 ### Spojení
+
 - Nejčastější relační operace s 2 relacemi.
 - Spojení 2 relací vytvoří jednu výslednou relaci.
 - Výsledná relace obsahuje kombinace datových N-tic, jež vyhovují podmínce a druhu spojení.
 - Podmínka vyjadřuje vztah mezi relacemi.
 - Zajišťuje se pomocí stejného atributu definovaného nad stejnou doménou
+
 #### Vnitřní spojení
-- Na rovnost 
+
+- Na rovnost
 - Theta spojení => na nerovnost `!= (<>)` nebo další porovnávací operátory `>`, `=`, `<`
+
 #### Vnější spojení
+
 - Levé spojení
 
 `SELECT * FROM Tab1 LEFT OUTER JOIN Tab2 ON a=C;`
+
 - Pravé spojení
-`SELECT * FROM Tab1 RIGHT OUTER JOIN Tab2 ON a=c;`
+  `SELECT * FROM Tab1 RIGHT OUTER JOIN Tab2 ON a=c;`
 - Plné spojení
-`SELECT * FROM Tab1 ON a=c FULL OUTER JOIN Tab2 ON a=c;`
+  `SELECT * FROM Tab1 ON a=c FULL OUTER JOIN Tab2 ON a=c;`
 
 ## Pod dotazy
 
 - Umožňují výstup jednoho dotazu použít jako vstup jiného dotazu.
 - Vnitřní dotaz je součásti vnějšího dotazu.
-- Výstup poddotazu vkládáme jako vstup vnějšího dotazu, obvykle do klauzule WHERE nebo HAVING. 
+- Výstup poddotazu vkládáme jako vstup vnějšího dotazu, obvykle do klauzule `WHERE` nebo `HAVING`.
 - Poddotaz může ale být kdekoliv ve vnějším dotazu.
 - Výhody:
   - Rychlost
