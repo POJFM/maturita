@@ -40,3 +40,36 @@ string query = "INSERT INTO Zakaznici(Prijmeni, Jmeno, Mesto, ...)values(@Prijme
 ```csharp
 SqlCommand prikaz = new SqlCommand(textPrikazu);
 ```
+
+- Přidáme parametry
+
+```csharp
+prikaz.Parameters.AddwithValue("@Prijmeni", prijmeni);
+prikaz.Parameters.AddwithValue("@jmeno" , jmeno);
+prikaz.Parameters.AddwithValue("@mesto" , mesto);
+prikaz.Parameters.AddwithValue("@mail", mail);
+prikaz.Parameters.AddwithValue("@telefon", telefon);
+prikaz.Parameters.AdduithValue("@kolo", kolo);
+```
+
+- Připojíme databázi pomocí sql connection, propojíme s řetězcem pro připojení
+
+```csharp
+SqlConnection pripojeni = new SqlConnection(Propojeni)
+```
+
+- Otevřeme připojení, přidání připojení k příkazu, provedení příkazu, ukončení
+
+```csharp
+pripojeni.Open();
+
+// Přidání připojení k příkazu
+prikaz.Connection = pripojeni;
+
+// Provedení příkazu
+prikaz.ExecuteNonQuery();
+
+// Zavření připojení
+pripojeni.Close();
+```
+- `ExecuteNonQuery` – spuštění dotazu typu delete, insert, nemá žádnou hodnotu
