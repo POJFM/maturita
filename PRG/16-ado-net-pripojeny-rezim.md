@@ -3,15 +3,10 @@
 - Pracuje se daty přímo na databázovém serveru
 - Vytvoříme WA form pro zadání dat
 - Musíme připojit knihovnu klienta using Systém.Data.SqlClient
-- **Transakce** – provádí několik dotazů zároveň, provedou se všechny nebo žádný
 
 **Připojovací řetězec** - je vlastnost, kde je uvedená cesta a slouží pro připojení Databáze k aplikaci
 
 Připojení děláme přes server explorer, klikneme na zvolenou databázi a cestu v Conection string zkoprírujeme do programu
-
-```csharp
-// code
-```
 
 ## Vkládání záznamů
 
@@ -72,4 +67,82 @@ prikaz.ExecuteNonQuery();
 // Zavření připojení
 pripojeni.Close();
 ```
+
 - `ExecuteNonQuery` – spuštění dotazu typu delete, insert, nemá žádnou hodnotu
+
+## Mazání záznamu
+
+```csharp
+private void BtnVymaz_click(object sender, EventArgs e)
+{
+	string prijmeniA = TxtPrijmeni.Text;
+	// Do textu příkazu nebudeme vkládat proměnné, ale parametry, na které se budem následně odkazovat
+	// Parametry použivame aby byla DB bezpečnější
+	// Pokud vkládáme přimo proměnné může do textového pole uživatel vložit SQL přikaz a narušit nebo zrušit DB
+	// Paremetr začíná vždy @
+	string textprikazu = "delete from Kniha where Autor_prijmeni = @Autor_prijmeni"
+
+	// Instance (objekt) příkazu
+	SqlCommand prikaz = new SqlCommand(textPrikazu);
+
+	// Pomocí commandu přídam/přiradim jednotlivým parametrům konkrétní hodnotu
+	// Parametru @Autor_jmeno přiřadím hodnotu z proměnné jmenoA
+	prikaz.Parameters.AddWithvalue("@Autor_prijmeni", prijmeniA);
+
+	// Objekt pro připojení
+	Sqlconnection connect = new Sqlconnection(pripojivaciRetezec);
+
+	// Otevření připojení
+	connect.Open();
+	// Přidání připojení k přikazu
+	prikaz.Connection = connect; // Přes vlastnost Connection přiřadím do přikazu připojení
+	// Provedení přikazu
+	prikaz.ExecuteNonQuery();
+	connect.close();
+}
+```
+
+## Transakce
+
+- Umožňuje provést několik dotazů zároveň a buď je provedou všechny nebo ani jeden
+
+### Mazání využitím transakcí
+
+```csharp
+// Vytvoříme instanci pro transakce
+SqlTransaction transakce = connect.BeginTransaction();
+// Procházim celou kolekciseznamID a postuně mažu, nejdřiv v tabulce pujcky a pak kniha
+foreach (int s in seznamId)
+{
+	// V tabulce pujcky
+	textPrikazu = "delete from Pujcky where Idkniha=@IdKniha ";
+	prikaz = new SqlCommand(textPrikazu, connect);
+	prikaz.Parameters.AddWithValue( "@IdKniha", s);
+	prikaz.Transaction = transakce;
+	prikaz.ExecuteNonQuery ()
+	// V kniha
+	textPrikazu = "delete from Kniha where Id=@Id ";
+	prikaz = new SqlCommand (textPrikazu, connect);
+	prikaz.Parameters.AddWithValue ( "@Id" , s);
+	prikaz.Transaction = transakce;
+	prikaz.ExecuteNonQuery();
+}
+transakce.Commit();
+connect.Close();
+MessageBox.Show("bylo smazano: " + seznamId.Count.ToString());
+```
+
+## Update záznamu
+
+```csharp
+private void BtnAktualizuj_click(object sender, EventArgs e)
+{
+	// Vytvoření připojení
+	SqlConnection connect = new SqlConnection (PripojovaciRetezec);
+	string textPrikazu = "update Kniha set PocetKs=5 where pocetKs<=2";
+	SqlCommand prikaz = new SqlCommand(textPrikazu, connect);
+	connect.Open();
+	prikaz.ExecuteNonQuery();
+	connect.Close();
+}
+```

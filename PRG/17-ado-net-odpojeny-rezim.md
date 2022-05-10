@@ -1,8 +1,8 @@
 # ADO.NET - odpojený režim
 
-- nepracuji s DB na serveru, kopie DB v paměti aplikace, po skončení odešleme změny do DB
-- komfortnější práce s daty
-- vhodné jsou tabulky, které často používám
+- Nepracuji s DB na serveru, kopie DB v paměti aplikace, po skončení odešleme změny do DB
+- Komfortnější práce s daty
+- Vhodné jsou tabulky, které často používám
 
 ## ORM (objektově relační mapování)
 
@@ -36,7 +36,6 @@ partial class LokalniSada
   partial class KnihaRow
   {
     // Upravení metody ToString
-    O references
     public override string ToString()
     {
       return Autor_prijmeni + " " + Nazev + " " + PocetKs;
