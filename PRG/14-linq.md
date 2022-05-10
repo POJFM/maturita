@@ -54,25 +54,123 @@ while (enumerator2.MoveNext())
   Console.Write(enumerator2.Current);
 ```
 
-<br>
+### Postup práce:
 
-<img src="./img/linq-vytvoreni-tridy.png" style="width:600px">
+- Vytvoříme si třídu s danými prvky, vlastnostmi, konstruktorem
 
-<br>
+```csharp
+class Spolecnosti
+{
+  string spolecnost, mesto, zeme;
+
+  #region properties
+  public string Spolecnost { get => spolecnost; set => spolecnost = value; }
+  public string Mesto { get => mesto; set => mesto = value; }
+  public string Zeme { get => zeme; set => zeme = value; }
+
+  #region construct
+  public Spolecnosti(string s, string m, string z)
+  #endregion
+}
+```
+
+- Vytvoříme instanci konstruktoru
+
+```csharp
+Spolecnosti s1 = new Spolecnosti("Auto Moto", "Brno", "ČR");
+Spolecnosti s2 = new Spolecnosti("Cyklo Svět", "Bratislava", "SK");
+```
+
+- Naplníme kolekci `LIST`
+
+```csharp
+List<Spolecnosti> s = new List<Spolecnosti>() { s1, s2 };
+```
+
+- Zobrazení kolekce
+
+```csharp
+foreach(Spolecnosti spol in s)
+  Console.WriteLine(spol.Spolecnost + "\t" + spol.Mesto + "\t" + spol.Zeme);
+Console.WriteLine();
+```
 
 ## LINQ operace
 
-<br>
+- Výběr dat `SELECT`
 
-<img src="./img/linq-vyber-dat.png" style="width:500px">
+```csharp
+// Pomocí operátorů
+var jmenaZak1 = from jmeno in z select jmeno.Jmeno;
 
-<br>
+// Zobrazení
+foreach(string jmeno in jmenaZak1)
+  Console.WriteLine();
+Console.WriteLine();
+```
 
-<br>
+- Výběr dvou a více prvků `SELECT`
 
-<img src="./img/linq-razeni.png" style="width:500px">
+```csharp
+var celaJmenaZak1 = from jmeno in z select jmeno.Jmeno + "\t" + jmeno.Prijmeni;
 
-<br>
+foreach(string jmeno in celaJmenaZak)
+  Console.WriteLine(jmeno);
+Console.WriteLine();
+```
+
+- Filtrování dat `SELECT WHERE` - Při filtrování využíváme příkaz `SELECT` doplněný podmínkou `WHERE`
+
+```csharp
+var ceskeSpol = from spol in s where (spol.Zeme == "ČR") select spol.Spolecnost;
+
+foreach(string nazev in ceskeSpol)
+  Console.WriteLine(nazev);
+Console.WriteLine();
+```
+
+- Řazení dat `ORDER BY`
+  - Pro řazení dat použijeme příkaz `ORDER BY`
+  - Řadit můžeme vzestupně `Ascending` nebo sestupně `Descending`
+
+```csharp
+var razeniSpolecnost2 = from spol in z orderby spol.Spolecnost descending select spol.Jmeno + "\t" + spol.Prijmeni + "\t" + spol.Spolecnost;
+
+foreach(string zakaznici in razeniSpolecnost2)
+  Console.WriteLine(zakaznici);
+Console.WriteLine();
+```
+
+- Seskupování dat `GROUP BY`
+  - Používá se příkaz `GROUP BY`
+  - Pro výpis využití dvou cyklů `foreach`
+  - Můžeme zde použít další metody: `MAX`, `MIN`, `AVERAGE`, `COUNT`
+
+```csharp
+var spolecnostSeskupeni1 = from spol in s group spol by spol.Zeme;
+
+foreach(var seskup in spolecnostSeskupeni1)
+{
+  Console.WriteLine("země: {0}\tspolečnost: {1}", seskup.Key, seskup.Count());
+  foreach(var spol in seskup)
+    Console.WriteLine("\t{0}", spol.Spolecnost);
+}
+
+Console.WriteLine();
+```
+
+- Spojování dat
+  - Umožňuje spojovat několik kolekcí přes jeden nebo více společných klíčových datových složek
+  - Pomocí příkazu `JOIN`
+  - Za on dosadíme prvek, ze kterého vycházíme => `from` a za `equals` prvek, kterým spojujeme => `join`
+
+```csharp
+var zakazniciZeme1 = from sp in s join a in z on sp.Spolecnost equals a.Spolecnost select new { a.Jmeno, a.Prijmeni, sp.Zeme };
+
+foreach(var radek in zakazniciZeme1)
+  Console.WriteLine(radek);
+Console.WriteLine();
+```
 
 ### Agregační funkce
 

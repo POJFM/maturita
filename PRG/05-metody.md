@@ -49,11 +49,27 @@
 - Do kulatých závorek zadáváme parametry
 - V těle programu píšeme příkaz return
 
-<br>
+```csharp
+static void Main (string[] args)
+{
+  Console.WriteLine("Výpočet obvodu obdelníku");
+  Console.WriteLine();
+  Console.Write("Zadej délku obdelníku");
+  double a = double.Parse(Console.ReadLine());
+  Console.Write("Zadej šířku obdelníku");
+  double b = double.Parse(Console.ReadLine());
 
-<img src="./img/metoda-s-par-s-navr-hod.png" style="width:600px">
+  // Volání metody
+  Console.WriteLine("O = {0}", Obvod(b,a));
+  Console.ReadLine();
+}
 
-<br>
+// Statická metoda
+static double Obvod(double sirka, double delka)
+{
+  return 2 * (sirka + delka);
+}
+```
 
 ## Metoda bez parametrů s návratovou hodnotou
 
@@ -61,29 +77,80 @@
 - Formální parametry se používají pro předávání hodnot, pokud tam nejsou, nechce předávat hodnoty.
 - Při volání metody nesmíme zapomenout na závorky.
 
-<br>
+```csharp
+static void Main (string[] args)
+{
+  Console.WriteLine("Výpočet obvodu obdelníku");
+  Console.WriteLine();
 
-<img src="./img/metoda-bez-par-s-navr-hod.png" style="width:600px">
+  // Volání metody
+  Console.WriteLine("O = {0}", Obvod());
+  Console.ReadLine();
+}
 
-<br>
+// Statická metoda
+static double Obvod()
+{
+  Console.Write("Zadej délku obdelníku");
+  double delka = double.Parse(Console.ReadLine());
+  Console.Write("Zadej šířku obdelníku");
+  double sirka = double.Parse(Console.ReadLine());
+
+  return 2 * (sirka + delka);
+}
+```
 
 ## Metoda bez návratové hodnoty s formálními parametry
 
 - Metoda nevrací žádnou činnost. Její datový typ je void (prázdny datový typ)
 
-<br>
+```csharp
+static void Main (string[] args)
+{
+  Console.WriteLine("Výpočet obvodu obdelníku");
+  Console.WriteLine();
+  Console.Write("Zadej délku obdelníku");
+  double a = double.Parse(Console.ReadLine());
+  Console.Write("Zadej šířku obdelníku");
+  double b = double.Parse(Console.ReadLine());
 
-<img src="./img/metoda-bez-navr-hod-s-par.png" style="width:600px">
+  // Volání metody
+  Obvod(b,a);
 
-<br>
+  Console.ReadLine();
+}
+
+// Statická metoda
+static void Obvod(double sirka, double delka)
+{
+  Console.WriteLine("O = {0}", 2 * (delka + sirka));
+}
+```
 
 ## Metoda bez návratové hodnoty a bez formálních parametrů
 
-<br>
+```csharp
+static void Main (string[] args)
+{
+  Console.WriteLine("Výpočet obvodu obdelníku");
+  Console.WriteLine();
 
-<img src="./img/metoda-bez-navr-hod-bez-par.png" style="width:600px">
+  // Volání metody
+  Obvod(b,a);
 
-<br>
+  Console.ReadLine();
+}
+
+// Statická metoda
+static void Obvod()
+{
+  Console.Write("Zadej délku obdelníku");
+  double delka = double.Parse(Console.ReadLine());
+  Console.Write("Zadej šířku obdelníku");
+  double sirka = double.Parse(Console.ReadLine());
+  Console.WriteLine("O = {0}", 2 * (delka + sirka));
+}
+```
 
 ## Každá metoda může být:
 

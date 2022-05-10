@@ -30,11 +30,11 @@ Catch
 
 ### FormatException
 
-- pokud do proměnné zadám nevhodnou hodnotu tzn do číselného dat typu zadám text
+- Pokud do proměnné zadám nevhodnou hodnotu tzn do číselného dat typu zadám text
 
 ### IndexOutOfRangeException
 
-- přetečení pole, chci napsat více prvků než je rozsah pole
+- Přetečení pole, chci napsat více prvků než je rozsah pole
 
 ```csharp
 static void Main(string[] args)

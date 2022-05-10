@@ -17,14 +17,14 @@ namespace UtilityLibraries;
 
 public static class StringLibrary
 {
-    public static bool StartsWithUpper(this string? str)
-    {
-        if (string.IsNullOrWhiteSpace(str))
-            return false;
+  public static bool StartsWithUpper(this string? str)
+  {
+    if (string.IsNullOrWhiteSpace(str))
+      return false;
 
-        char ch = str[0];
-        return char.IsUpper(ch);
-    }
+    char ch = str[0];
+    return char.IsUpper(ch);
+  }
 }
 ```
 
@@ -36,37 +36,36 @@ using UtilityLibraries;
 
 class Program
 {
-    static void Main(string[] args)
+  static void Main(string[] args)
+  {
+  	int row = 0;
+
+    do
     {
-        int row = 0;
+      if (row == 0 || row >= 25)
+        ResetConsole();
 
-        do
-        {
-            if (row == 0 || row >= 25)
-                ResetConsole();
+      string? input = Console.ReadLine();
+      if (string.IsNullOrEmpty(input)) break;
+        Console.WriteLine($"Input: {input}");
+      Console.WriteLine("Begins with uppercase? " + $"{(input.StartsWithUpper() ? "Yes" : "No")}");
+      Console.WriteLine();
+      row += 4;
+    } while (true);
+      return;
 
-            string? input = Console.ReadLine();
-            if (string.IsNullOrEmpty(input)) break;
-            Console.WriteLine($"Input: {input}");
-            Console.WriteLine("Begins with uppercase? " +
-                 $"{(input.StartsWithUpper() ? "Yes" : "No")}");
-            Console.WriteLine();
-            row += 4;
-        } while (true);
-        return;
-
-        // Declare a ResetConsole local method
-        void ResetConsole()
-        {
-            if (row > 0)
-            {
-                Console.WriteLine("Press any key to continue...");
-                Console.ReadKey();
-            }
-            Console.Clear();
-            Console.WriteLine($"{Environment.NewLine}Press <Enter> only to exit; otherwise, enter a string and press <Enter>:{Environment.NewLine}");
-            row = 3;
-        }
+    // Declare a ResetConsole local method
+    void ResetConsole()
+    {
+      if (row > 0)
+      {
+        Console.WriteLine("Press any key to continue...");
+        Console.ReadKey();
+      }
+      Console.Clear();
+      Console.WriteLine($"{Environment.NewLine}Press <Enter> only to exit; otherwise, enter a string and press <Enter>:{Environment.NewLine}");
+      row = 3;
     }
+  }
 }
 ```

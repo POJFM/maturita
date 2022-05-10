@@ -1,12 +1,12 @@
 # Strukturované programování - cykly
 
-- používáme tehdy, když chceme, aby se něco opakovalo
-- tři základní druhy: cyklus s řídicí proměnou, cyklus s podmínkou na začátku a cyklus s podmínkou na konci
-- používá se zde operátor pro inkrementaci/dekrementaci
+- Používáme tehdy, když chceme, aby se něco opakovalo
+- Tři základní druhy: cyklus s řídicí proměnou, cyklus s podmínkou na začátku a cyklus s podmínkou na konci
+- Používá se zde operátor pro inkrementaci/dekrementaci
 
 ## Cyklus s řídící proměnou - FOR
 
-- tento cyklus má stanovený **pevný počet opakování** a hlavně obsahuje tzv. řídící proměnnou (celočíselnou), ve které se postupně během běhu cyklu mění hodnoty
+- Tento cyklus má stanovený **pevný počet opakování** a hlavně obsahuje tzv. řídící proměnnou (celočíselnou), ve které se postupně během běhu cyklu mění hodnoty
 
 ```csharp
 // for (inicializace, podmínka, aktualizace)
@@ -15,10 +15,10 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
-- v inicializaci nastavujeme nejčastěji hodnotu 0 (int i =0)
-- podmínka musí být splněna pro vykonání dalšího kroku cyklu, když přestane platit, cyklus se ukončí
-- aktualizace znamená co s danou proměnou má stát například zvýší se vždy o 1 (i++)
-- nejčastěji se využívá u polí
+- V inicializaci nastavujeme nejčastěji hodnotu 0 (int i =0)
+- Podmínka musí být splněna pro vykonání dalšího kroku cyklu, když přestane platit, cyklus se ukončí
+- Aktualizace znamená co s danou proměnou má stát například zvýší se vždy o 1 (i++)
+- Nejčastěji se využívá u polí
 
 <p align="center">
   <img src="img/03-01.svg" />

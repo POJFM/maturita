@@ -6,7 +6,7 @@
 - Soubor je textového typu podobný tabulce v excelu
 - Vhodné pro ukládání malých databází
 
-```
+```xml
 Složení:
 Hlavička
   <kořen>

@@ -118,3 +118,47 @@ using (StreamReader cteni = new StreamReader(soubor, Encoding.Default))
 <img src="./img/trida-file.png" style="width:500px">
 
 <br>
+
+### Zjištění zda soubor existuje
+
+```csharp
+string soubor = @"H:\vyuka\mesta.txt";
+Console.WriteLine( File.Exists(soubor) ? "soubor je ve složce" : "soubor neexistuje" );
+```
+
+### Smazání souboru pokud existuje
+
+```csharp
+if (File.Exists(@"H:\vyuka\mesta.txt"))
+  File.Delete(@"H:\vyuka\mesta.txt");
+```
+
+### Vytvoření souboru
+
+```csharp
+File.Create(@"H:\vyuka\mesta.txt");
+```
+
+### Kopírování souboru
+
+```csharp
+string soubor1 = @"H:\vyuka\mesta.txt", soubor2 = @"H:\vyuka\zeme.txt";
+File.Copy(soubor1, soubor2);
+```
+
+### Zjištění data poslední změny
+
+```csharp
+DateTime datum = File.GetLastWriteTime(soubor1);
+Console.WriteLine(datum);
+```
+
+## Metody třídy Directory
+
+- Metody pracují se složkami a dávají informace o složkách
+- Složky můžeme vytvořit, smazat, zjistit zda existují...
+
+```csharp
+Console.WriteLine(Directory.Exists(@"H:\vyuka\mesta.txt") ? "složka je na disku" : "složku jsme na disku nenašli");
+Directory.CreateDirectory(@"H:\vyuka\mesta.txt");
+```

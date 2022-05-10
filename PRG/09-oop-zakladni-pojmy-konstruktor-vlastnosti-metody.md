@@ -70,27 +70,26 @@ parametrů*/)
 #### Instanční
 
 - Vyžaduje vytvoření instance objektu pomoci, kterého je pak volána
-- nejčastěji typu `void`
+- Nejčastěji typu `void`
 
 ### Konstruktory
 
 - Každý objekt by měl být v daném okamžiku ve správném stavu, proměnné by měly nabývat správné hodnoty
 - Tento správný stav by měl být zachován ihned po vytvoření instance => konstruktor.
 - Je to vlastně metoda volána při vytváření nové instance dané třídy
-- Vždy `public`, nemá datový typ, název je totožný s názvem třídy
-- this znamená to, co je nedeklarované v části datových členů
+- Vždy `public`, nemá datový typ, název je totožný s názvem třídy `this` => to, co je nedeklarované v části datových členů
 
 ### Druhy konstruktorû
 
-- **bez parametru**
-  - hned přidám proměnné
-  - není nic v závorce konstruktoru
-- **s parametrem**
-  - do závorky parametry s dat typy nemusí mít stejné jméno jak ve třídě
+- **Bez parametru**
+  - Hned přidám proměnné
+  - Není nic v závorce konstruktoru
+- **S parametrem**
+  - Do závorky parametry s dat typy nemusí mít stejné jméno jak ve třídě
   - `this` odkazuje na proměnné datových členů
-  - vlevo datové členy, vpravo konstruktorové
-- **přetížený konstruktor**
-  - vice konstruktorů v jedné třídě
+  - Vlevo datové členy, vpravo konstruktorové
+- **Přetížený konstruktor**
+  - Více konstruktorů v jedné třídě
 
 ### Vlastnosti
 

@@ -51,7 +51,7 @@ for (int i = 0; i < 4; i++) {
 
 ## Procházení pole
 
-- pro procházení se využívá cyklů:
+- Pro procházení se využívá cyklů:
   - **FOR** - musíme znát počet prvků pole
   - **FOREACH** - nemusíme si pamatovat index pole
 
@@ -63,15 +63,15 @@ foreach (int n in numbers) {
 
 ### Foreach
 
-- deklaruje iterační proměnnou, která automatický nabývá po průchodu cyklem hodnotu dalšího prvku pole.
+- Deklaruje iterační proměnnou, která automatický nabývá po průchodu cyklem hodnotu dalšího prvku pole.
 - Iterační proměnnou můžeme deklarovat i pomoci var, pak si kompilátor C# odvodí datový typ z typu prvků pole.
 
 ### Nevhodný Foreach:
 
-- nechceme procházet celé pole (např. chceme zobrazit každý druhý prvek)
-- chceme procházet pole opačným směrem
-- potřebujeme znát aktuální hodnotu indexu
-- potřebujeme měnit hodnoty pole. Iterační proměnná je jen kopií prvků pole
+- Nechceme procházet celé pole (např. chceme zobrazit každý druhý prvek)
+- Chceme procházet pole opačným směrem
+- Potřebujeme znát aktuální hodnotu indexu
+- Potřebujeme měnit hodnoty pole. Iterační proměnná je jen kopií prvků pole
 
 ## Zjištění délky pole
 
@@ -114,13 +114,13 @@ n[0, 1] = y;
 
 # Metody pro práci s poli
 
-Můžeme používat statické metody třídy ARRAY nebo instanční metody.
+- Můžeme používat statické metody třídy ARRAY nebo instanční metody.
 
 ## Třída Array
 
 ### Sort()
 
-Slouží pro setřídění pole vzestupně.
+- Slouží pro setřídění pole vzestupně.
 
 ```csharp
 // statické metody na poli třída Array
@@ -130,7 +130,7 @@ Array.Sort(nums);
 
 ### Reverse()
 
-Zobrazí pole od konce, pokud metodu aplikujeme na seřazené pole dostaneme pole seřazené sestupně
+- Zobrazí pole od konce, pokud metodu aplikujeme na seřazené pole dostaneme pole seřazené sestupně
 
 ```csharp
 // seřazení sestupně nejdřív seřadím vzestupně a pak po
@@ -140,7 +140,7 @@ Array.Reverse(nums);
 
 ### IndexOf
 
-Najde první pozici (číslo indexu) hledaného prvku pole, pokud nenajde nic, vrátí hodnotu **-1**.
+- Najde první pozici (číslo indexu) hledaného prvku pole, pokud nenajde nic, vrátí hodnotu **-1**.
 
 ```csharp
 // pozice zadaného prvku INDEXOF
