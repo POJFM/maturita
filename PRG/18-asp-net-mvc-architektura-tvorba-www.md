@@ -43,6 +43,12 @@
 
 - prostředník / rozhraní pro Model a View
 
+### Životní cyklus stránky
+
+<p align="center">
+  <img src="img/18-02.png" />
+</p>
+
 ## Základní pojmy
 
 - HTML - statický web
@@ -111,7 +117,7 @@ namespace app.Models // skládá se z názvu projektu a složky
 
 #### Možnosti předávání dat:
 
-- **`ViewData`** - pracuje s daty podobně jako kolekce, dictionary přistupuje k hodnotám pomocí klíče
+- **`ViewData`** - pracuje s daty podobně jako kolekce, je to dictionary a přistupuje k hodnotám pomocí klíče, starší způsob
 
 ```csharp
 ViewData["Greeting"] = "Ahoj cukrouši";
