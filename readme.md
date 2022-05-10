@@ -2,13 +2,11 @@
 
 **Obor vzdělání:** 18-20-M/01 Informační technologie
 
-### Témata k ústní maturitní zkoušce platné k roku 2021/22 (Profilová část)
+## Témata k ústní maturitní zkoušce platné k roku 2021/22 (Profilová část)
 
-#### Odborný předmět 1
+### Odborný předmět 1
 
-- [PRG](https://github.com/SPSOAFM-IT18/maturita/tree/main/PRG) (1-17)
-- [WEB](https://github.com/SPSOAFM-IT18/maturita/tree/main/WEB) (18-22)
-- [RDS](https://github.com/SPSOAFM-IT18/maturita/tree/main/RDS) (23-30)
+#### [PRG](https://github.com/SPSOAFM-IT18/maturita/tree/main/PRG)
 
 1. [Základy algoritmizace a programování](https://github.com/SPSOAFM-IT18/maturita/blob/main/PRG/01-zaklady-algoritmizace-a-programovani.md)
 2. [Strukturované programování – sekvence, větvení](https://github.com/SPSOAFM-IT18/maturita/blob/main/PRG/02-strukturovane-programovani-sekvence-vetveni.md)
@@ -29,9 +27,15 @@
 17. [ADO.NET – odpojený režim](https://github.com/SPSOAFM-IT18/maturita/blob/main/PRG/17-ado-net-odpojeny-rezim.md)
 18. [ASP.NET – MVC architektura, tvorba www](https://github.com/SPSOAFM-IT18/maturita/blob/main/WEB/18-asp-net-mvc-architektura-tvorba-www.md)
 19. [ASP.NET – formuláře a jejích propojení s databázi](https://github.com/SPSOAFM-IT18/maturita/blob/main/WEB/19-asp-net-formulare-a-jejich-propojeni-s-databazi.md)
+
+#### [WEB](https://github.com/SPSOAFM-IT18/maturita/tree/main/WEB)
+
 20. [Tvorba webových stránek s využitím HTML, CSS](https://github.com/SPSOAFM-IT18/maturita/blob/main/WEB/20-tvorba-webovych-stranek-s-vyuzitim-html-css.md)
 21. [Tvorba dynamických webových stránek s použitím PHP – základní pojmy, struktury a formuláře](https://github.com/SPSOAFM-IT18/maturita/blob/main/WEB/21-tvorba-dynamickych-webovych-stranek-s-pouzitim-php-zakladni-pojmy-struktury-a-formulare.md)
 22. [Tvorba dynamických webových stránek s použitím PHP – připojení databáze](https://github.com/SPSOAFM-IT18/maturita/blob/main/WEB/22-tvorba-dynamickych-webovych-stranek-s-pouzitim-php-pripojeni-databaze.md)
+
+#### [RDS](https://github.com/SPSOAFM-IT18/maturita/tree/main/RDS)
+
 23. [Relační datový model](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/23-relacni-databazovy-model/23-relacni-databazovy-model.md)
 24. [SQL – DLL (syntaxe jazyka SQL CREATE, DROP)](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/24-sql-dll-syntaxe-jazyka-sql-create-drop.md)
 25. [SQL – DLL (změna struktury tabulek)](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/25-sql-dll-zmena-struktury-tabulek.md)
@@ -41,11 +45,9 @@
 29. [DQL – dotazy nad více tabulkami, poddotazy](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/29-dql-dotazy-nad-vice-tabulkami-poddotazy.md)
 30. [Entitně-relační modelování](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/30-entitne-relacni-modelovani.md)
 
-#### Odborný předmět 2
+### Odborný předmět 2
 
-- [ZAM](https://github.com/SPSOAFM-IT18/maturita/tree/main/ZAM) (1-13)
-- [OSW](https://github.com/SPSOAFM-IT18/maturita/tree/main/OSW) (14-19)
-- [OSL](https://github.com/SPSOAFM-IT18/maturita/tree/main/OSL) (20-25)
+#### [ZAM](https://github.com/SPSOAFM-IT18/maturita/tree/main/ZAM)
 
 1. [Bezpečnost elektrických zařízení, vyhl. 50/1978 Sb.](https://github.com/SPSOAFM-IT18/maturita/blob/main/ZAM/01-bezpecnost-elektrickych-zarizeni-vyhl-50-1978-sb.md)
 2. [Ochrana před úrazem elektrickým proudem](https://github.com/SPSOAFM-IT18/maturita/blob/main/ZAM/02-ochrana-pred-urazem-elektrickym-proudem.md)
@@ -60,12 +62,18 @@
 11. [Sekvenční logické obvody](https://github.com/SPSOAFM-IT18/maturita/blob/main/ZAM/11-sekvencni-logicke-obvody.md)
 12. [Programovatelné automaty](https://github.com/SPSOAFM-IT18/maturita/blob/main/ZAM/12-programovatelne-automaty.md)
 13. [Řízení s uzavřenou smyčkou – regulace](https://github.com/SPSOAFM-IT18/maturita/blob/main/ZAM/13-rizeni-s-uzavrenou-smyckou-regulace.md)
+
+#### [OSW](https://github.com/SPSOAFM-IT18/maturita/tree/main/OSW)
+
 14. [Active Directory](https://github.com/SPSOAFM-IT18/maturita/blob/main/OSW/14-active-directory.md)
 15. [Domovské adresáře, síťové složky, oprávnění](https://github.com/SPSOAFM-IT18/maturita/blob/main/OSW/15-domovske-adresare-sitove-slozky-opravneni.md)
 16. [Práce s disky, základní nastavení sítě](https://github.com/SPSOAFM-IT18/maturita/blob/main/OSW/16-prace-s-disky-zakladni-nastaveni-site.md)
 17. [Bezpečnost dat a uživatelských účtů](https://github.com/SPSOAFM-IT18/maturita/blob/main/OSW/17-bezpecnost-dat-a-uzivatelskych-uctu.md)
 18. [Síťové služby: DHCP, DNS](https://github.com/SPSOAFM-IT18/maturita/blob/main/OSW/18-sitove-sluzby-dhcp-dns.md)
 19. [Síťové služby: IIS](https://github.com/SPSOAFM-IT18/maturita/blob/main/OSW/19-sitove-sluzby-iis.md)
+
+#### [OSL](https://github.com/SPSOAFM-IT18/maturita/tree/main/OSL)
+
 20. [Základy operačního systému GNU/Linux](https://github.com/SPSOAFM-IT18/maturita/blob/main/OSL/20-zaklady-operacniho-systemu-gnu-linux.md)
 21. [Uživatelé a skupiny](https://github.com/SPSOAFM-IT18/maturita/blob/main/OSL/21-uzivatele-a-skupiny.md)
 22. [Práce s disky](https://github.com/SPSOAFM-IT18/maturita/blob/main/OSL/22-prace-s-disky.md)
