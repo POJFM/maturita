@@ -10,7 +10,7 @@
 
 1. [Základy algoritmizace a programování](https://github.com/SPSOAFM-IT18/maturita/blob/main/PRG/01-zaklady-algoritmizace-a-programovani.md)
 2. [Strukturované programování – sekvence, větvení](https://github.com/SPSOAFM-IT18/maturita/blob/main/PRG/02-strukturovane-programovani-sekvence-vetveni.md)
-3. [Strukturované programování – cykly](https://github.com/SPSOAFM-IT18/maturita/blob/main/PRG/https://github.com/SPSOAFM-IT18/maturita/blob/main/PRG/03-strukturovane-programovani-cykly.md)
+3. [Strukturované programování – cykly](https://github.com/POJFM/maturita/blob/main/PRG/03-strukturovane-programovani-cykly.md)
 4. [Pole](https://github.com/SPSOAFM-IT18/maturita/blob/main/PRG/04-pole.md)
 5. [Metody](https://github.com/SPSOAFM-IT18/maturita/blob/main/PRG/05-metody.md)
 6. [Kolekce](https://github.com/SPSOAFM-IT18/maturita/blob/main/PRG/06-kolekce.md)
@@ -25,8 +25,8 @@
 15. [MS SQL – vytvoření databáze](https://github.com/SPSOAFM-IT18/maturita/blob/main/PRG/15-ms-sql.md)
 16. [ADO.NET – připojený režim](https://github.com/SPSOAFM-IT18/maturita/blob/main/PRG/16-ado-net-pripojeny-rezim.md)
 17. [ADO.NET – odpojený režim](https://github.com/SPSOAFM-IT18/maturita/blob/main/PRG/17-ado-net-odpojeny-rezim.md)
-18. [ASP.NET – MVC architektura, tvorba www](https://github.com/SPSOAFM-IT18/maturita/blob/main/WEB/18-asp-net-mvc-architektura-tvorba-www.md)
-19. [ASP.NET – formuláře a jejích propojení s databázi](https://github.com/SPSOAFM-IT18/maturita/blob/main/WEB/19-asp-net-formulare-a-jejich-propojeni-s-databazi.md)
+18. [ASP.NET – MVC architektura, tvorba www](https://github.com/SPSOAFM-IT18/maturita/blob/main/PRG/18-asp-net-mvc-architektura-tvorba-www.md)
+19. [ASP.NET – formuláře a jejích propojení s databázi](https://github.com/SPSOAFM-IT18/maturita/blob/main/PRG/19-asp-net-formulare-a-jejich-propojeni-s-databazi.md)
 
 #### [WEB](https://github.com/SPSOAFM-IT18/maturita/tree/main/WEB)
 
@@ -36,14 +36,14 @@
 
 #### [RDS](https://github.com/SPSOAFM-IT18/maturita/tree/main/RDS)
 
-23. [Relační datový model](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/23-relacni-databazovy-model/23-relacni-databazovy-model.md)
-24. [SQL – DLL (syntaxe jazyka SQL CREATE, DROP)](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/24-sql-dll-syntaxe-jazyka-sql-create-drop.md)
-25. [SQL – DLL (změna struktury tabulek)](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/25-sql-dll-zmena-struktury-tabulek.md)
-26. [SQL – DCL (GRANT, REVOKE)](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/26-sql-dcl-grant-revoke.md)
-27. [SQL – DML (INSERT, UPDATE, DELETE, TRUNCATE)](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/27-sql-dml-insert-update-delete-truncate.md)
-28. [SQL – jednotabulkové dotazy DQL](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/28-sql-jednotabulkove-dotazy-dql.md)
-29. [DQL – dotazy nad více tabulkami, poddotazy](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/29-dql-dotazy-nad-vice-tabulkami-poddotazy.md)
-30. [Entitně-relační modelování](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/30-entitne-relacni-modelovani.md)
+1.  [Relační datový model](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/23-relacni-databazovy-model.md)
+2.  [SQL – DLL (syntaxe jazyka SQL CREATE, DROP)](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/24-sql-dll-syntaxe-jazyka-sql-create-drop.md)
+3.  [SQL – DLL (změna struktury tabulek)](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/25-sql-dll-zmena-struktury-tabulek.md)
+4.  [SQL – DCL (GRANT, REVOKE)](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/26-sql-dcl-grant-revoke.md)
+5.  [SQL – DML (INSERT, UPDATE, DELETE, TRUNCATE)](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/27-sql-dml-insert-update-delete-truncate.md)
+6.  [SQL – jednotabulkové dotazy DQL](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/28-sql-jednotabulkove-dotazy-dql.md)
+7.  [DQL – dotazy nad více tabulkami, poddotazy](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/29-dql-dotazy-nad-vice-tabulkami-poddotazy.md)
+8.  [Entitně-relační modelování](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/30-entitne-relacni-modelovani.md)
 
 ### Odborný předmět 2
 
