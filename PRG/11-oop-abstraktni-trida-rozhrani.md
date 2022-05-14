@@ -2,6 +2,8 @@
 
 ## Rozhraní (Interface)
 
+- kompletně abstraktní třída
+- může obsahovat pouze abstraktní metody a vlastnosti (nemají tělo `{}`)
 - Rozhraní umožňuje instancí nastavit přístup pouze některým metodám = to je těm, které jsou v daném rozhraní definované
 - `C#` neumožňuje vícenásobné dědění z tříd, může ale vícenásobně dědit z rozhraní.
 - Rozhraní obsahuje pouze hlavičky metody, vlastnosti nebo indexerů, které chci instancí přidělit
