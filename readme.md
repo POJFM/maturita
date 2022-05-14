@@ -36,14 +36,14 @@
 
 #### [RDS](https://github.com/SPSOAFM-IT18/maturita/tree/main/RDS)
 
-1.  [Relační datový model](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/23-relacni-databazovy-model.md)
-2.  [SQL – DLL (syntaxe jazyka SQL CREATE, DROP)](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/24-sql-dll-syntaxe-jazyka-sql-create-drop.md)
-3.  [SQL – DLL (změna struktury tabulek)](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/25-sql-dll-zmena-struktury-tabulek.md)
-4.  [SQL – DCL (GRANT, REVOKE)](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/26-sql-dcl-grant-revoke.md)
-5.  [SQL – DML (INSERT, UPDATE, DELETE, TRUNCATE)](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/27-sql-dml-insert-update-delete-truncate.md)
-6.  [SQL – jednotabulkové dotazy DQL](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/28-sql-jednotabulkove-dotazy-dql.md)
-7.  [DQL – dotazy nad více tabulkami, poddotazy](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/29-dql-dotazy-nad-vice-tabulkami-poddotazy.md)
-8.  [Entitně-relační modelování](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/30-entitne-relacni-modelovani.md)
+23.  [Relační datový model](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/23-relacni-databazovy-model.md)
+24.  [SQL – DLL (syntaxe jazyka SQL CREATE, DROP)](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/24-sql-dll-syntaxe-jazyka-sql-create-drop.md)
+25.  [SQL – DLL (změna struktury tabulek)](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/25-sql-dll-zmena-struktury-tabulek.md)
+26.  [SQL – DCL (GRANT, REVOKE)](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/26-sql-dcl-grant-revoke.md)
+27.  [SQL – DML (INSERT, UPDATE, DELETE, TRUNCATE)](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/27-sql-dml-insert-update-delete-truncate.md)
+28.  [SQL – jednotabulkové dotazy DQL](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/28-sql-jednotabulkove-dotazy-dql.md)
+29.  [DQL – dotazy nad více tabulkami, poddotazy](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/29-dql-dotazy-nad-vice-tabulkami-poddotazy.md)
+30.  [Entitně-relační modelování](https://github.com/SPSOAFM-IT18/maturita/blob/main/RDS/30-entitne-relacni-modelovani.md)
 
 ### Odborný předmět 2
 
