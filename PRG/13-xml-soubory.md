@@ -2,7 +2,7 @@
 
 - Je to typ značkovacího jazyka, je samo popisovací
 - Využívají se zde značky, tagy, elementy
-- Další značkovací jazyky: `HTML`, `CSS`
+- Další značkovací jazyky: `HTML`, `XAML`
 - Soubor je textového typu podobný tabulce v excelu
 - Vhodné pro ukládání malých databází
 
